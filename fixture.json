@@ -1,0 +1,51 @@
+{
+  "key": "amlin-blue-space",
+  "name": "MS Amlin Blue Space",
+  "categories": [
+    "hot_shit",
+    "excel",
+    "fintech"
+  ],
+  "environments": [
+    {
+      "name": "production",
+      "servers": [ "amlin-blue-space.s.simplificator.com" ],
+      "urls": ["http://amlin-blue-space.s.simplificator.com", "http://amlin-blue-space.c.simplificator.com"],
+      "root_path": "/srv/blue-space/current",
+      "ruby_version": "2.1.6",
+      "rails_version": "4.0.20"
+    },
+    {
+      "name": "staging",
+      "servers": [ "amlin-blue-space-staging.s.simplificator.com" ],
+      "urls": ["http://amlin-blue-space-staging.s.simplificator.com", "http://amlin-blue-space-staging.c.simplificator.com"],
+      "root_path": "/srv/blue-space/current",
+      "ruby_version": "2.3.1",
+      "rails_version": "4.2.6"
+    }
+  ],
+  "members": [
+    {
+      "name": "Thomas Ritter",
+      "roles": [ "project_lead", "technical_lead" ]
+    },
+    {
+      "name": "Ferdinand Niedermann",
+      "roles": [ "developer" ]
+    },
+    {
+      "name": "Alessandro di Maria",
+      "roles": [ "former_developer" ]
+    }
+  ],
+  "continuous_integration": "https://semaphoreci.com/simplificator-ci/blue-space",
+  "slack_channel": {
+    "uri": "slack://channel?team=simplificator&id=SOMEID",
+    "name": "#amlin"
+  },
+  "project_management": "https://basecamp.com/1923583/projects/3178173",
+  "bug_reporting": "https://app.bugsnag.com/simplificator/amlin-blue-space",
+  "repository": "https://github.com/simplificator/blue-space",
+  "erp": "https://simplificator.mocoapp.com/customers/760253724",
+  "show_case": "https://drive.google.com/heschnidgseh"
+}
