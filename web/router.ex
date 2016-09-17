@@ -16,8 +16,12 @@ defmodule Appricot.Router do
   scope "/", Appricot do
     pipe_through :api
 
-    resources "/projects", ProjectController, only: [:show]
-    resources "/users", UserController, only: [:index]
+    get "/", RootController, :index
+
+    resources "/projects", ProjectController, only: [:show, :index, :create, :update] do
+      resources "/environments", EnvironmentController, only: [:show, :index, :create, :update]
+    end
+    resources "/users", UserController, only: [:index, :show]
   end
 
 end
